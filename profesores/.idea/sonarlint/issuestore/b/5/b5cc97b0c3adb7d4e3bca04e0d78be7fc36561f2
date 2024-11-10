@@ -1,0 +1,19 @@
+
+[
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(ß“º¶üÿÿÿÿ
+:
+java:S3751"Make this method non "private".(ß“º¶üÿÿÿÿ
+c	java:S100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şë’˜
+5
+java:S3751%"Make this method non "private".(Şë’˜
+c	java:S100*"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦»ò
+5
+java:S3751*"Make this method non "private".(¦»ò
+S
+java:S1854<"8Remove this useless assignment to local variable "temp".(ß«ˆûÿÿÿÿ
+[
+java:S46849"@Replace this persistent entity with a simple POJO or DTO object.(Ôµıúûÿÿÿÿ
+:
+java:S37519"Make this method non "private".(Ôµıúûÿÿÿÿ
+D
+java:S1481<")Remove this unused "temp" local variable.(ß«ˆûÿÿÿÿ

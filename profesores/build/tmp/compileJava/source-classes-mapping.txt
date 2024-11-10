@@ -1,0 +1,12 @@
+co/com/poli/profesores/rest/ProfesoresREST.java
+ co.com.poli.profesores.rest.ProfesoresREST
+co/com/poli/profesores/profesoresApplication.java
+ co.com.poli.profesores.profesoresApplication
+co/com/poli/profesores/config/SwaggerConfig.java
+ co.com.poli.profesores.config.SwaggerConfig
+co/com/poli/profesores/service/ProfesorService.java
+ co.com.poli.profesores.service.ProfesorService
+co/com/poli/profesores/model/Profesor.java
+ co.com.poli.profesores.model.Profesor
+co/com/poli/profesores/repository/ProfesorRepository.java
+ co.com.poli.profesores.repository.ProfesorRepository
