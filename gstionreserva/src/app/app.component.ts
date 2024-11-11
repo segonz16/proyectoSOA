@@ -38,7 +38,7 @@ export class AppComponent implements OnInit{
 
   guardar(): void{
     this.profesoresService.saveProfesor(this.profesorForm.value).subscribe(resp => {
-
+      this.profesorForm.reset();
     },
       error=>{console.error(error)}
     )

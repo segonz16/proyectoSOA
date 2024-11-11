@@ -1,0 +1,874 @@
+{
+	"info": {
+		"_postman_id": "5482bf11-5acd-4562-b0ba-25a420def461",
+		"name": "Reservas salones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Profesor",
+			"item": [
+				{
+					"name": "obtener todos los profesores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8097/api/profesores/profesores",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"api",
+								"profesores",
+								"profesores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar profesor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"documento\": \"110126\",\r\n    \"tipoDocumento\": \"CE\",\r\n    \"nombre\": \"Carlos Ramirez\",\r\n    \"email\": \"carloslr@elpoli.edu.co\",\r\n    \"telefono\": \"3224567834\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8097/api/profesores/guardar",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"api",
+								"profesores",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"documento\": \"110126\",\r\n    \"tipoDocumento\": \"CE\",\r\n    \"nombre\": \"Carlos Ramirez\",\r\n    \"email\": \"carloslr@elpoli.edu.co\",\r\n    \"telefono\": \"3224567834\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8097/api/profesores/guardar",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"api",
+								"profesores",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8097/api/profesores/profesores/110126",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"api",
+								"profesores",
+								"profesores",
+								"110126"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8097/api/profesores/eliminarprofesor/110126",
+							"host": [
+								"localhost"
+							],
+							"port": "8097",
+							"path": [
+								"api",
+								"profesores",
+								"eliminarprofesor",
+								"110126"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "salones",
+			"item": [
+				{
+					"name": "obtener todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8096/api/salones/salones",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"salones",
+								"salones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoSalon\": \"p13-203\",\r\n    \"nombre\": \"Salon de informatica\",\r\n    \"ubicacion\": \"Medellin\",\r\n    \"capacidad\": 25,\r\n    \"descripcion\": \"Salon para laboratorios informaticos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8096/api/salones/guardar",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"salones",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoSalon\": \"p13-203\",\r\n    \"nombre\": \"Salon de informatica\",\r\n    \"ubicacion\": \"Medellin\",\r\n    \"capacidad\": 30,\r\n    \"descripcion\": \"Salon para laboratorios informaticos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8096/api/salones/salon/actualizar",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"salones",
+								"salon",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8096/api/salones/salones/P13-301",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"salones",
+								"salones",
+								"P13-301"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8096/api/salones/eliminarsalon/p13-203",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"salones",
+								"eliminarsalon",
+								"p13-203"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reservas",
+			"item": [
+				{
+					"name": "obtener todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8096/api/gestionreserva/reservas",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"gestionreserva",
+								"reservas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idProfesor\": \"123456789\",\r\n    \"codigoSalon\": \"P13-201\",\r\n    \"fecha\": \"2024-11-12\",\r\n    \"horaInicio\": \"04:00:00\",\r\n    \"horaFin\": \"04:30:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8096/api/gestionreserva/guardar",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"gestionreserva",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 29,\r\n    \"idProfesor\": \"123456789\",\r\n    \"codigoSalon\": \"P13-201\",\r\n    \"fecha\": \"2024-11-11\",\r\n    \"horaInicio\": \"09:00:00\",\r\n    \"horaFin\": \"09:30:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8096/api/gestionreserva/reservas/actualizar",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"gestionreserva",
+								"reservas",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8096/api/gestionreserva/reservas/29",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"gestionreserva",
+								"reservas",
+								"29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar por salon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8096/api/gestionreserva/reservas/codigoSalon/P13-201",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"gestionreserva",
+								"reservas",
+								"codigoSalon",
+								"P13-201"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar por profesor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8096/api/gestionreserva/reservas/idProfesor/987654321",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"gestionreserva",
+								"reservas",
+								"idProfesor",
+								"987654321"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8096/api/gestionreserva/eliminarreserva/p13-203",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"gestionreserva",
+								"eliminarreserva",
+								"p13-203"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "gateway Profesor",
+			"item": [
+				{
+					"name": "obtener todos los profesores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/profesores/profesores",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"profesores",
+								"profesores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar profesor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"documento\": \"110126\",\r\n    \"tipoDocumento\": \"CE\",\r\n    \"nombre\": \"Carlos Ramirez\",\r\n    \"email\": \"carloslr@elpoli.edu.co\",\r\n    \"telefono\": \"3224567834\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/profesores/guardar",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"profesores",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"documento\": \"110126\",\r\n    \"tipoDocumento\": \"CE\",\r\n    \"nombre\": \"Carlos Ramirez\",\r\n    \"email\": \"carloslr@elpoli.edu.co\",\r\n    \"telefono\": \"3224567834\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/profesores/guardar",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"profesores",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/profesores/profesores/110126",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"profesores",
+								"profesores",
+								"110126"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/profesores/eliminarprofesor/110126",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"profesores",
+								"eliminarprofesor",
+								"110126"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "gateway salones",
+			"item": [
+				{
+					"name": "obtener todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/salones/salones",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"salones",
+								"salones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoSalon\": \"p13-203\",\r\n    \"nombre\": \"Salon de informatica\",\r\n    \"ubicacion\": \"Medellin\",\r\n    \"capacidad\": 25,\r\n    \"descripcion\": \"Salon para laboratorios informaticos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/salones/guardar",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"salones",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigoSalon\": \"p13-203\",\r\n    \"nombre\": \"Salon de informatica\",\r\n    \"ubicacion\": \"Medellin\",\r\n    \"capacidad\": 30,\r\n    \"descripcion\": \"Salon para laboratorios informaticos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/salones/salon/actualizar",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"salones",
+								"salon",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/salones/salones/P13-301",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"salones",
+								"salones",
+								"P13-301"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/salones/eliminarsalon/p13-203",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"salones",
+								"eliminarsalon",
+								"p13-203"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "gateway reservas",
+			"item": [
+				{
+					"name": "obtener todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/gestionreserva/reservas",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"gestionreserva",
+								"reservas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idProfesor\": \"123456789\",\r\n    \"codigoSalon\": \"P13-201\",\r\n    \"fecha\": \"2024-11-12\",\r\n    \"horaInicio\": \"04:00:00\",\r\n    \"horaFin\": \"04:30:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/gestionreserva/guardar",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"gestionreserva",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 29,\r\n    \"idProfesor\": \"123456789\",\r\n    \"codigoSalon\": \"P13-201\",\r\n    \"fecha\": \"2024-11-11\",\r\n    \"horaInicio\": \"09:00:00\",\r\n    \"horaFin\": \"09:30:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/gestionreserva/reservas/actualizar",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"gestionreserva",
+								"reservas",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/gestionreserva/reservas/29",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"gestionreserva",
+								"reservas",
+								"29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar por salon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/gestionreserva/reservas/codigoSalon/P13-201",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"gestionreserva",
+								"reservas",
+								"codigoSalon",
+								"P13-201"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar por profesor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/gestionreserva/reservas/idProfesor/987654321",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"gestionreserva",
+								"reservas",
+								"idProfesor",
+								"987654321"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/gestionreserva/eliminarreserva/p13-203",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"gestionreserva",
+								"eliminarreserva",
+								"p13-203"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "gateway",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "auth",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

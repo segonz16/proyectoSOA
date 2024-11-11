@@ -35,10 +35,11 @@
             placeholder="Ingresa tu número de teléfono">
         </div>
         <p></p>
-        <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+        <button type="submit" class="btn btn-primary btn-block" [disabled]="profesorForm.invalid">Registrar</button>
       </form>
     </div>
   </div>
 </div>
+
 
 <router-outlet></router-outlet>
