@@ -1,0 +1,35 @@
+server:
+  port: 9000
+
+spring:
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: profesores-service
+            uri: http://localhost:8097
+            predicates:
+              - path=/api/profesores/**
+#            filters:
+#              - JwtAuthenticationFilter
+          - id: salones-service
+            uri: http://localhost:8096
+            predicates:
+              - path=/api/salones/**
+          - id: reservas-service
+            uri: http://localhost:8096
+            predicates:
+              - path=/api/gestionreserva/**
+
+        globalcors:
+          cors-configurations:
+            '[/**]':
+              allowedOrigins: "*"
+              allowedMethods:
+              - GET
+              - POST
+              - DELETE
+              - PUT
+#jwt:
+#  secret: mySecretKey
+#  expiration: 3600000  # 1 hora en milisegundos
